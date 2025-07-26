@@ -1,0 +1,25 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.leftGate,
+.rightGate {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 50vw;
+  background: black;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.leftGate {
+  left: 0;
+}
+
+.rightGate {
+  right: 0;
+}

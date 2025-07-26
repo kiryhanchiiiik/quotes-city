@@ -1,0 +1,43 @@
+:global {
+  @keyframes flicker {
+    0% {
+      opacity: 1;
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+        0 0 40px #ffffff, 0 0 80px #ffffff;
+    }
+    50% {
+      opacity: 0.8;
+      text-shadow: 0 0 2px #ffffff, 0 0 4px #ffffff, 0 0 10px #ffffff,
+        0 0 20px #ffffff, 0 0 40px #ffffff;
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff,
+        0 0 40px #ffffff, 0 0 80px #ffffff;
+    }
+  }
+
+  @keyframes redPulse {
+    0% {
+      text-shadow: 0 0 5px #ff2d2d, 0 0 10px #ff2d2d, 0 0 20px #ff2d2d;
+    }
+    50% {
+      text-shadow: 0 0 2px #ff2d2d, 0 0 5px #ff2d2d, 0 0 10px #ff2d2d;
+    }
+    100% {
+      text-shadow: 0 0 5px #ff2d2d, 0 0 10px #ff2d2d, 0 0 20px #ff2d2d;
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    }
+    50% {
+      text-shadow: 0 0 2px #ffffff, 0 0 5px #ffffff, 0 0 10px #ffffff;
+    }
+    100% {
+      text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@use "../../styles/animations/animations" as *;
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.videoBg {
+  transition: opacity 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.overlay {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-align: center;
+  backdrop-filter: brightness(0.7);
+}
+
+.icon {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+}
+
+.khalifa {
+  position: absolute;
+  top: 30px;
+  left: 55px;
+}
+
+.eiffel {
+  position: absolute;
+  top: 30px;
+  right: 55px;
+}
+
+.skyline {
+  position: absolute;
+  bottom: 50px;
+  left: 55px;
+}
+
+.crossing {
+  position: absolute;
+  bottom: 50px;
+  right: 65px;
+}
+
+.timeSquareLink {
+  position: absolute;
+  top: 20px;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+.tokyoTowerLink {
+  position: absolute;
+  bottom: 20px;
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+
+.title {
+  font-size: 64px;
+  font-weight: 700;
+  animation: flicker 3s infinite alternate;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.9;
+  animation: pulse 4s infinite alternate;
+}
+
+.redSpan {
+  color: #ff2d2d;
+  animation: redPulse 3s infinite alternate;
+}
+
+.loadingGate {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  color: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.loadingText {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.loadingText {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  opacity: 0.9;
+  animation: pulse 4s infinite alternate;
+}
+
+.cityName {
+  color: #ff2d2d;
+  animation: redPulse 3s infinite alternate;
+}
